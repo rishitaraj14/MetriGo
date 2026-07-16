@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: MetriGo Backend
+    env: node
+    branch: main
+    repo: https://github.com/rishitaraj14/MetriGo
+    root: backend
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: PORT
+        value: "5000"
+      - key: DATABASE_URL
+        fromSecret: DATABASE_URL
+      - key: GEMINI_API_KEY
+        fromSecret: GEMINI_API_KEY

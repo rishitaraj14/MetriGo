@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "description": "MetriGo — full-stack transit intelligence platform (commute fares, routing, city transit insights)",
+  "homepage": "https://github.com/rishitaraj14/MetriGo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rishitaraj14/MetriGo.git"
+  },
+  "scripts": {
+    "dev:frontend": "npm --workspace frontend run dev",
+    "dev:backend": "npm --workspace backend run dev",
+    "dev": "npm-run-all --parallel dev:frontend dev:backend"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

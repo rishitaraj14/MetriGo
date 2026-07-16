@@ -1,0 +1,26 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Journey {
+  id           String   @id @default(uuid())
+  timestamp    DateTime @default(now())
+  sessionId    String
+  city         String
+  startName    String
+  endName      String
+  startLat     Float
+  startLon     Float
+  endLat       Float
+  endLon       Float
+  routePath    String   // JSON string representing coordinates array
+  fares        String   // JSON string representing fares object
+  aiInsights   String?  // JSON string representing AI insights
+}
