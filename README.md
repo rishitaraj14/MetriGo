@@ -33,6 +33,12 @@ Live demo / repository: https://github.com/rishitaraj14/MetriGo
 - Lucide icons
 - Axios
 
+## Languages
+- HTML
+- CSS
+- JavaScript
+- TypeScript
+
 ## Project Structure
 - `frontend/` — React + Vite frontend application and UI source files
 - `frontend/public/` — frontend static assets and image files
