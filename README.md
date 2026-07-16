@@ -7,6 +7,8 @@ This project is ready to deploy to GitHub Pages or any Node.js hosting platform.
 
 Live demo / repository: https://github.com/rishitaraj14/MetriGo
 
+Live demo (hosted on Vercel): https://metri-go-frontend-two.vercel.app/
+
 ## Features
 - Global city geocoding and driving route planning using OpenStreetMap / OSRM
 - Estimates for auto, cab, metro, and bus fare options
